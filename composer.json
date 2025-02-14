@@ -1,0 +1,28 @@
+{
+    "name": "smit-backend/llm-token-cost-telemetry",
+    "description": "Enterprise gateway proxy metering model token usage across OpenAI, Anthropic, and Gemini with dynamic team budget controls.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "email": "sync2sale@gmail.com",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\TokenMeter\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\TokenMeter\\PackageServiceProvider"
+            ]
+        }
+    }
+}
